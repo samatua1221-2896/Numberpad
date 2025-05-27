@@ -43,13 +43,6 @@ class MyKeyboard(KMKKeyboard):
 
 keyboard = MyKeyboard()
 
-# Macros (optional, in case you expand)
-macros = Macros()
-keyboard.modules.append(macros)
-
-# Optional: Add LED indicator logic if you want
-# status_leds = statusLED(led_pins=[board.GP22])  # example
-# keyboard.extensions.append(status_leds)
 
 if __name__ == '__main__':
     keyboard.go()
